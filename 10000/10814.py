@@ -1,0 +1,8 @@
+import sys
+input = sys.stdin.readline
+
+n = int(input())
+members = [input().strip().split() for _ in range(n)]
+members.sort(key=lambda x: int(x[0]))
+for age, name in members:
+    print(age, name)
